@@ -1,29 +1,5 @@
 on:
-  push:
-    branches:
-      - main
-      - 'test-*'
-    paths:
-      - 'bin/**'
-      - 'lib/**'
-      - 'plugins/**'
-      - 'test/**'
-      - 'templates/**'
-      - 'Gemfile'
-      - 'vagrant.gemspec'
-      - 'Rakefile'
-  pull_request:
-    branches:
-      - main
-    paths:
-      - 'bin/**'
-      - 'lib/**'
-      - 'plugins/**'
-      - 'test/**'
-      - 'Gemfile'
-      - 'templates/**'
-      - 'vagrant.gemspec'
-      - 'Rakefile'
+  push
 
 jobs:
   unit-tests:
